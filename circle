@@ -1,0 +1,101 @@
+1).........................
+class circle{
+    constructor(radius){
+        this.radius=radius;
+    }
+}
+var C =new circle("1.0");
+console.log(C.radius);
+2)........................
+class circle{
+    constructor (radius,color){
+        this.radius = radius;
+        this.color = color;
+    }
+}
+var C =new circle("1.0","red");
+console.log(C); 
+3)...........................
+ class circle {
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+get circle(){
+    return C.radius;
+}  
+  }
+var C= new circle("1.0","red");
+console.log(C.radius);
+4)..................................
+class circle{
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+  set changeradius(modifieradius){
+   this.radius=modifieradius;
+  }
+}
+var C =new circle("1.0","red");
+C.changeradius="5.0";
+console.log(C.radius);
+5).......................................
+class circle {
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+get circle(){
+    return C.color;
+}
+}
+var C=new circle("1.0","red");
+console.log(C.color);
+6).....................................
+class circle{
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+    }
+    set changecolor(modifiecolor){
+        this.color=modifiecolor;
+    }
+}
+var C=new circle("1.0","red");
+C.changecolor= "blue";
+console.log(C.color);
+7).........................................
+class circle{
+    constructor(radius,color) {
+        this.radius=radius;
+        this.color=color;
+    }
+}
+var C =new circle("1.0","red");
+console.log(`"circle[Radius=${C.radius},Color=${C.color}]"`);
+8)............................................
+class area{
+    constructor(radius){
+        this.radius=radius;
+    }
+    get areaname(){
+        return 3.14*C.radius*C.radius;
+    }
+}
+    var C=new area (2);
+  var Q = C.areaname;
+console.log(Q);
+9)...................................
+class circumference{
+    constructor(radius){
+        this.radius=radius;
+    }
+get circle () {
+    return 2*22/7*C.radius;
+}
+}
+var C=new circumference(3);
+var Q=C.circle;
+console.log(Q);
+
