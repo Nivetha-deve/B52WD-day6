@@ -1,0 +1,14 @@
+1).............................
+class MOVIE{
+  constructor (title,studio,rating){
+    this.title = title;
+    this.studio =studio;
+    this.rating = rating;
+  }
+set changerating(modifiedrating){
+    this.rating =modifiedrating
+}
+}
+var M = new MOVIE("Casino Royale","Eon Production", "PG");
+M.changerating ="PG13";
+console.log(M);
