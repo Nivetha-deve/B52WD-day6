@@ -1,0 +1,11 @@
+class person{
+    constructor(name,age,adress,college,depertment){
+        this.name=name;
+        this.age=age;
+        this.adress=adress;
+        this.college=college;
+        this.depertment=depertment;
+    }
+}
+var D=new person("Nivetha","22","Coimbatore","Sri Krishna Arts and Science College","Maths");
+console.log(`name:${D.name}, age:${D.age}, adress:${D.adress}, college:${D.college}, Depertment:${D.depertment}`);
