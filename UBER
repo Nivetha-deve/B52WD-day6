@@ -1,0 +1,20 @@
+class uber {
+    constructor(name,start,end,distance,price){
+        this.name=name;
+        this.start=start;
+        this.end=end;
+        this.distance=distance;
+        this.price=price;
+    }
+get totalprice(){
+    return 14.7*C.distance;
+}
+}
+var C= new uber("Raj","vadavalli","kuniyamuthur","12.3","RS.14.7");
+var D= C.totalprice;
+console.log(`NAME:${C.name}
+START:${C.start}
+END:${C.end}
+DISTANCE:${C.distance}
+PRICE PER KM:${C.price}
+TOTALPRICE:RS.${D}`);
